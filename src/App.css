@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+#main{
+    background: url('./bg-foto.png') no-repeat right;
+    background-size: contain;
+    margin-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#image-site{
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#lateral{
+    height: 40vh;
+    text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#lateral-container{
+    width: 50%;
+    height: 60vh;
 }
 
-.App-link {
-  color: #61dafb;
+#titulo-principal{
+    font-weight: 800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hide-responsive{
+    display: none;
+}
+
+#titulo-principal h1{
+    line-height: 40px;
+    font-size: 3em;
+}
+
+#nome{
+    border-bottom: 5px solid rgb(0, 110, 255);
+}
+
+#link-contrate a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid rgb(0, 110, 255);
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#line{
+    height: 1px ;
+    background-color: rgb(192, 192, 192);
+}
+
+#sobre-mim{
+    margin-top: 30px;
+}
+
+#sobre-mim h2{
+    margin-bottom: 20px;
+}
+
+.skill-box{
+    width: 300px;
+}
+
+
+footer{
+    background-color: #242424;
+    padding: 50px;
+    background-image: url('./bg-linhas-reverse.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#final-footer{
+    border-top: 1px solid white;
+    margin-top: 50px;
+    padding-top: 5px;
+    height: 50px;
+}
+
+#container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#footer-contato{
+    width: 40%;
+}
+
+#footer-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-form input{
+    background-color: transparent;
+    height: 40px;
+    padding: 15px;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+    color: white;
+}
+
+#footer-form textarea{
+    color: white;
+    resize: none;
+    padding: 15px;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+    background-color: transparent;
+    height: 160px;
+}
+
+#enviar-form{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 4px solid rgb(0, 110, 255);
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+    transition: 400ms all;
+}
+
+#enviar-form:hover{
+    background-color: rgba(80, 80, 80, 0.411);
+}
+
+@media (max-width: 576px) {
+    #lateral-container{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 300px;
+        height: 50vh;
+    }
+
+    #titulo-principal{
+        text-align: center;
+        font-size:0.7em;
+        margin-bottom: 10px !important;
+    }
+
+    #lateral{
+        justify-content: center !important;
+    }
+
+    #descricao-principal, #link-contrate{
+        text-align: center;
+        margin-bottom: 10px !important;
+    }
+
+    #main{
+        background: url('./bg-foto-mobile.png')  center top no-repeat;
+        background-size: 500px;
+    }
+
+    #skills > div{
+        flex-direction: column;
+    }
+
+    .skill-box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .hide-responsive{
+        display: flex;
+        margin-top: 20px;
+    }
+    .projetos-row{
+        flex-direction: column;
+    }
+
+    #container-footer{
+        flex-direction: column;
+    }
+
+    #footer-contato, #footer-form{
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }

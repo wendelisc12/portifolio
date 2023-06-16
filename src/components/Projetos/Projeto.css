@@ -1,0 +1,65 @@
+
+#title-description{
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+#title-description h6{
+    color: rgb(218, 218, 218);
+}
+
+#botoes-projeto{
+    display: flex;
+    align-items: center;
+}
+
+#botoes-projeto a{
+    text-transform: uppercase;
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 4px solid rgb(0, 110, 255);
+    padding: 10px 5px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 400ms all;
+}
+
+#image-celular{
+    width: 120px;
+    height: 180px;
+    position: absolute;
+    bottom: -20px;
+    right: -30px;
+}
+
+#botoes-projeto a:hover{
+    background-color: rgba(80, 80, 80, 0.411);
+}
+
+@media (max-width: 576px) {
+    #main-projeto{
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #image-site{
+        width: 410px !important;
+        height:230px !important;
+    }
+
+    #title-description{
+        text-align: center;
+    }
+
+    #botoes-projeto{
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    #botoes-projeto a{
+        margin: 0px !important;
+    }
+}
