@@ -1,8 +1,16 @@
 import './navegation.css'
+import { motion } from 'framer-motion';
 
 const Navegation = () => {
     return (
-        <div className="py-4 d-flex justify-content-between" id='nav-container'>
+        <motion.div className="py-4 d-flex justify-content-between" id='nav-container'
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+          delay: 0.3,
+        }}>
             <div><h3>Wendel</h3></div>
             <ul className="d-flex list-unstyled d-flex align-items-center justify-content-around" id='nav'>
                 <li>
@@ -20,7 +28,7 @@ const Navegation = () => {
                     </a>
                 </li>
             </ul>
-        </div>
+        </motion.div>
     );
 }
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { motion } from 'framer-motion';
 import './App.css';
 import Navegation from './components/Navegation/Navegation';
 import Projeto from './components/Projetos/Projeto';
@@ -6,9 +6,9 @@ import FormEmail from './components/FormEmail/FormEmail';
 
 function App() {
 
-  function contrateMe(){
+  function contrateMe() {
     window.scrollTo({
-      top: 2145,
+      top: document.body.scrollHeight,
       left: 0,
       behavior: 'smooth'
     });
@@ -17,10 +17,21 @@ function App() {
   return (
     <div>
       <div className="container" >
-        <main id='main'>
+        <motion.main id='main'
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+            delay: 0.3,
+          }}
+        >
           <Navegation />
           <div id='lateral-container' className='d-flex justify-content-center align-items-center'>
-            <div id='lateral' className='d-flex flex-column justify-content-evenly'>
+            <motion.div id='lateral' className='d-flex flex-column justify-content-evenly'
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.3 }}>
               <div id='titulo-principal' className='mb-4'>
                 <h1>Olá, tudo bem?</h1>
                 <h1>Meu nome é <span id='nome'>Wendel.</span></h1>
@@ -35,13 +46,16 @@ function App() {
               <div id='link-contrate'>
                 <a href="#" onClick={contrateMe}>Me contrate</a>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </main>
+        </motion.main>
 
         <div id='line'></div>
 
-        <section id='skills' className='mt-5'>
+        <motion.section id='skills' className='mt-5'
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}>
           <div className='d-flex justify-content-between mb-3'>
             <div className='skill-box'>
               <h1>HTML</h1>
@@ -84,25 +98,20 @@ function App() {
               <p>3 meses de experiência</p>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         <div id='line' className='hide-responsive'></div>
 
         <section className='my-5'>
           <h1 className='mb-4'>Projetos</h1>
           <div className='d-flex justify-content-between mb-5 projetos-row'>
+            <Projeto titulo='projeto MaoNaObra' thumbnail={"./maonaobra.png"} tecnologias={["React ·", " Node ·", " Sequelize ·", " Docker"]} linkProjeto={"https://www.linkedin.com/feed/update/urn:li:activity:7095221186854363136/"} linkCodigo={"https://github.com/MaoNaObraa/MaoNaObra"} thumbnailCelular={"./mockup-pomodoro.png"} />
+            <Projeto titulo='Movies Lib' thumbnail={"https://user-images.githubusercontent.com/58012282/195509291-3f25da7c-e599-4b40-bd58-6a5925536a83.png"} tecnologias={["react · ", " api"]} linkProjeto={"youtube.com"} linkCodigo={"https://github.com/wendelisc12/MovieLib"} thumbnailCelular={""} />
+
+          </div>
+          <div className='d-flex justify-content-between mb-5 projetos-row'>
             <Projeto titulo='Formulário multi-step' thumbnail={"https://github.com/wendelisc12/multi-step-form/raw/main/multi-step-form-main.png"} tecnologias={["React"]} linkProjeto={"https://multi-step-form-seven-lyart.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/multi-step-form"} thumbnailCelular={"./mockup-pomodoro.png"} />
-            <Projeto titulo='Movies Lib' thumbnail={"https://user-images.githubusercontent.com/58012282/195509291-3f25da7c-e599-4b40-bd58-6a5925536a83.png"} tecnologias={["react ", " api"]} linkProjeto={"youtube.com"} linkCodigo={"https://github.com/wendelisc12/MovieLib"} thumbnailCelular={""} />
-
-          </div>
-          <div className='d-flex justify-content-between mb-5 projetos-row'>
             <Projeto titulo='Pomodoro Timer' thumbnail={"https://github.com/wendelisc12/Pomodoro-Timer/raw/main/Screenshot_tela.png"} tecnologias={["Javascript"]} linkProjeto={"https://wendelisc12.github.io/Pomodoro-Timer/"} linkCodigo={"https://github.com/wendelisc12/Pomodoro-Timer"} thumbnailCelular={""} />
-            <Projeto titulo='Fine Olives' thumbnail={"https://github.com/wendelisc12/FineOlive/raw/main/Screenshot_tela.png"} tecnologias={["html"]} linkProjeto={"https://wendelisc12.github.io/FineOlive/"} linkCodigo={"google.com"} thumbnailCelular={""} />
-
-          </div>
-          <div className='d-flex justify-content-between mb-5 projetos-row'>
-            <Projeto titulo='movies lib' thumbnail={"https://github.com/wendelisc12/Pomodoro-Timer/raw/main/Screenshot_tela.png"} tecnologias={["Javascript"]} linkProjeto={"youtube.com"} linkCodigo={"google.com"} thumbnailCelular={""} />
-            <Projeto titulo='movies lib' thumbnail={"https://github.com/wendelisc12/FineOlive/raw/main/Screenshot_tela.png"} tecnologias={["Javascript"]} linkProjeto={"youtube.com"} linkCodigo={"google.com"} thumbnailCelular={""} />
 
           </div>
         </section>
@@ -116,7 +125,7 @@ function App() {
       <footer>
         <div className='container'>
           <FormEmail />
-          
+
 
           <div id='final-footer'>
             <Navegation />

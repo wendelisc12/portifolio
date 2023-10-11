@@ -1,3 +1,15 @@
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #c5c5c5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 110, 255);
+}
+
 #main{
     background: url('./bg-foto.png') no-repeat right;
     background-size: contain;
