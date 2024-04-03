@@ -71,11 +71,6 @@ function App() {
               <h1>Javascript</h1>
               <p>2 anos de experiência</p>
             </div>
-
-            <div className='skill-box'>
-              <h1>Typescript</h1>
-              <p>6 meses de experiência</p>
-            </div>
           </div>
 
           <div className='d-flex justify-content-between'>
@@ -86,15 +81,6 @@ function App() {
 
             <div className='skill-box'>
               <h1>React</h1>
-              <p>3 meses de experiência</p>
-            </div>
-
-            <div className='skill-box'>
-              <h1>Java</h1>
-              <p>1 ano de experiência</p>
-            </div>
-            <div className='skill-box'>
-              <h1>Docker</h1>
               <p>3 meses de experiência</p>
             </div>
           </div>
