@@ -2,18 +2,8 @@ import { motion } from 'framer-motion';
 import './App.css';
 import Navegation from './components/Navegation/Navegation';
 import Projeto from './components/Projetos/Projeto';
-import FormEmail from './components/FormEmail/FormEmail';
 
 function App() {
-
-  function contrateMe() {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      left: 0,
-      behavior: 'smooth'
-    });
-  }
-
   return (
     <div>
       <div className="container" >
@@ -44,7 +34,7 @@ function App() {
               </div>
 
               <div id='link-contrate'>
-                <a href="#" onClick={contrateMe}>Me contrate</a>
+                <a href="#sobre">Sobre mim</a>
               </div>
             </motion.div>
           </div>
@@ -56,63 +46,101 @@ function App() {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}>
-          <div className='d-flex justify-content-between mb-3'>
-            <div className='skill-box'>
-              <h1>HTML</h1>
-              <p>3 anos de experiência</p>
+          <h1 className='mb-5 text-center'>Habilidades</h1>
+          <div className='row d-flex'>
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./html.svg" alt="" />
+              <h2>HTML</h2>
             </div>
 
-            <div className='skill-box'>
-              <h1>CSS</h1>
-              <p>3 anos de experiência</p>
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./css.svg" alt="" />
+              <h2>CSS</h2>
             </div>
 
-            <div className='skill-box'>
-              <h1>Javascript</h1>
-              <p>2 anos de experiência</p>
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./javascript.svg" alt="" />
+              <h2>Javascript</h2>
             </div>
+
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./typescript.svg" alt="" />
+              <h2>Typescript</h2>
+            </div>
+
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./jquery-icon.svg" alt="" />
+              <h2>Jquery</h2>
+            </div>
+
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./bootstrap.svg" alt="" />
+              <h2>Bootstrap</h2>
+            </div>
+
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./atrevimento.svg" alt="" />
+              <h2>Sass</h2>
+            </div>
+
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./gulp.svg" alt="" />
+              <h2>Gulp</h2>
+            </div>
+
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./reagir.svg" alt="" />
+              <h2>React</h2>
+            </div>
+
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./angular.svg" alt="" />
+              <h2>Angular</h2>
+            </div>
+            <div className='skill-box text-center col-lg-3 col-md-6 col-sm-12'>
+              <img src="./node.svg" alt="" />
+              <h2>Node</h2>
+            </div>
+
           </div>
 
-          <div className='d-flex justify-content-between'>
-            <div className='skill-box'>
-              <h1>Bootstrap</h1>
-              <p>2 anos de experiência</p>
-            </div>
-
-            <div className='skill-box'>
-              <h1>React</h1>
-              <p>3 meses de experiência</p>
-            </div>
-          </div>
+          <div id='line' className='mt-5'></div>
         </motion.section>
 
-        <div id='line' className='hide-responsive'></div>
-
         <section className='my-5'>
-          <h1 className='mb-4'>Projetos</h1>
-          <div className='d-flex justify-content-between mb-5 projetos-row'>
-            <Projeto titulo='projeto MaoNaObra' thumbnail={"./maonaobra.png"} tecnologias={["React ·", " Node ·", " Sequelize ·", " Docker"]} linkProjeto={"https://www.linkedin.com/feed/update/urn:li:activity:7095221186854363136/"} linkCodigo={"https://github.com/MaoNaObraa/MaoNaObra"} thumbnailCelular={"./mockup-pomodoro.png"} />
-            <Projeto titulo='Movies Lib' thumbnail={"https://user-images.githubusercontent.com/58012282/195509291-3f25da7c-e599-4b40-bd58-6a5925536a83.png"} tecnologias={["react · ", " api"]} linkProjeto={"youtube.com"} linkCodigo={"https://github.com/wendelisc12/MovieLib"} thumbnailCelular={""} />
-
-          </div>
-          <div className='d-flex justify-content-between mb-5 projetos-row'>
-            <Projeto titulo='Formulário multi-step' thumbnail={"https://github.com/wendelisc12/multi-step-form/raw/main/multi-step-form-main.png"} tecnologias={["React"]} linkProjeto={"https://multi-step-form-seven-lyart.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/multi-step-form"} thumbnailCelular={"./mockup-pomodoro.png"} />
-            <Projeto titulo='Pomodoro Timer' thumbnail={"https://github.com/wendelisc12/Pomodoro-Timer/raw/main/Screenshot_tela.png"} tecnologias={["Javascript"]} linkProjeto={"https://wendelisc12.github.io/Pomodoro-Timer/"} linkCodigo={"https://github.com/wendelisc12/Pomodoro-Timer"} thumbnailCelular={""} />
-
+          <h1 className='mb-5 text-center'>Projetos</h1>
+          <div className='row'>
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
+              <Projeto titulo='projeto MaoNaObra' thumbnail={"./maonaobra.png"} tecnologias={["React ·", " Node ·", " Sequelize ·", " Docker"]} linkProjeto={"https://www.linkedin.com/feed/update/urn:li:activity:7095221186854363136/"} linkCodigo={"https://github.com/MaoNaObraa/MaoNaObra"} thumbnailCelular={"./mockup-pomodoro.png"} />
+            </div>
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
+              <Projeto titulo='Formulário multi-step' thumbnail={"https://github.com/wendelisc12/multi-step-form/raw/main/multi-step-form-main.png"} tecnologias={["React"]} linkProjeto={"https://multi-step-form-seven-lyart.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/multi-step-form"} thumbnailCelular={"./mockup-pomodoro.png"} />
+            </div>
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
+            <Projeto titulo='Cordatta' thumbnail={"./cordata.png"} tecnologias={["HTML · ", " CSS ·", " Bootstrap ·", " Jquery ·", " Javascript"]} linkProjeto={"https://cordatta-landing-page.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/Cordatta-Landing-Page"} thumbnailCelular={""} />
+            </div>
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
+              <Projeto titulo='Pomodoro Timer' thumbnail={"https://github.com/wendelisc12/Pomodoro-Timer/raw/main/Screenshot_tela.png"} tecnologias={["HTML · ", " CSS ·", " Javascript",]} linkProjeto={"https://wendelisc12.github.io/Pomodoro-Timer/"} linkCodigo={"https://github.com/wendelisc12/Pomodoro-Timer"} thumbnailCelular={""} />
+            </div>
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
+              <Projeto titulo='WebSpeed' thumbnail={"./webs.png"} tecnologias={["HTML · ", " CSS ·", " Javascript ·", " JQuery"]} linkProjeto={"https://web-speed-landing-page.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/WebSpeed-landing-page"} thumbnailCelular={""} />
+            </div>
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
+              <Projeto titulo='Cartão virtual' thumbnail={"./cartao.png"} tecnologias={["HTML · ", " Less ·"," Javascript ·", " Gulp",]} linkProjeto={"https://cartaovirtual-hazel.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/cartaovirtual"} thumbnailCelular={""} />
+            </div>
           </div>
         </section>
 
-        {/* <section id='sobre-mim'>
-          <h2>Sobre mim</h2>
-          <p>Sou um estudante de Análise e Desenvolvimento de sistemas, atualmente estou realizando pesquisas para o meu TCC que será sobre a área de design de interação. Desde sempre fui muito apaixonado em interfaces web, tanto que ja desenvolvi várias landing pages e criei muitas interfaces usando figma, com tantas LPs acabei criando uma grande experiência com HTML, CSS e Javascript, que é algo que eu me considero especialista. Com isso em mãos fui atrás de mais conhecimento no react.js e no Angular que estou estudando atualmente.</p>
-        </section> */}
       </div>
 
       <footer>
         <div className='container'>
-          <FormEmail />
-
-
+          <section id='sobre'>
+            <h1 className='text-center mb-4'>Sobre mim</h1>
+            <p>
+            Iniciei minha jornada como desenvolvedor front-end aos 16 anos, criando páginas web e aprimorando minhas habilidades em HTML e CSS. Durante meu curso no IFPE, me especializei em Javascript, Typescript, e frameworks como React, Angular e Node, além de aprender sobre metodologias ágeis, incluindo Scrum. Minha experiência inclui um estágio na agência KIFE, onde trabalhei com desenvolvimento e manutenção de sites, e um período de imersão no programa START da Accenture, onde me dediquei ao React e ao desenvolvimento backend. Meu conhecimento foi posto à prova em um hackathon da Accenture, onde liderei minha equipe até a vitória, criando uma aplicação fullstack. Atualmente, estou fazendo o curso da EBAC Profissão: engenheiro de front-end, onde estou aprimorando meus conhecimentos.
+            </p>
+          </section>
           <div id='final-footer'>
             <Navegation />
           </div>

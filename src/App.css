@@ -35,10 +35,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: 800;
 }
 
-.hide-responsive{
-    display: none;
-}
-
 #titulo-principal h1{
     line-height: 40px;
     font-size: 3em;
@@ -71,7 +67,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .skill-box{
-    width: 300px;
+    padding: 10px;
 }
 
 
@@ -140,7 +136,7 @@ footer{
     background-color: rgba(80, 80, 80, 0.411);
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 767px) {
     #lateral-container{
         align-items: center;
         text-align: center;
@@ -169,26 +165,9 @@ footer{
         background-size: 500px;
     }
 
-    #skills > div{
-        flex-direction: column;
-    }
-
     .skill-box{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
-
-    .hide-responsive{
-        display: flex;
-        margin-top: 20px;
-    }
-    .projetos-row{
-        flex-direction: column;
-    }
-
     #container-footer{
         flex-direction: column;
     }
