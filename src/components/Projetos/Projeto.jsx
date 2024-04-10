@@ -17,8 +17,8 @@ const Projeto = ({ thumbnail, titulo, tecnologias, linkProjeto, linkCodigo, thum
             </div>
 
             <div id='botoes-projeto'>
-                <a href={linkProjeto}>Ver projeto</a>
-                <a href={linkCodigo}>Ver código</a>
+                <a target='_blank' rel='noreferrer' href={linkProjeto}>Ver projeto</a>
+                <a target='_blank' rel='noreferrer' href={linkCodigo}>Ver código</a>
             </div>
         </motion.div>
     );
