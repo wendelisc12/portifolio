@@ -117,16 +117,16 @@ function App() {
               <Projeto titulo='Formulário multi-step' thumbnail={"https://github.com/wendelisc12/multi-step-form/raw/main/multi-step-form-main.png"} tecnologias={["React"]} linkProjeto={"https://multi-step-form-seven-lyart.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/multi-step-form"} thumbnailCelular={"./mockup-pomodoro.png"} />
             </div>
             <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
+            <Projeto titulo='IP Adress tracker' thumbnail={"./ip.png"} tecnologias={["HTML · ", " LESS ·", " Javascript ·", " Jquery ·", " API"]} linkProjeto={"https://ipadresstracker-app.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/ipadresstracker-app"} thumbnailCelular={""} />
+            </div>
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
+              <Projeto titulo='ROCK PAPER SCISSORS' thumbnail={"./pedrapapel.png"} tecnologias={["HTML · ", " SASS ·", " Javascript ·", " Jquery ·", " Gulp"]} linkProjeto={"https://pedra-papel-e-tesoura-pi.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/Pedra--papel-e-tesoura"} thumbnailCelular={""} />
+            </div>
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
             <Projeto titulo='Cordatta' thumbnail={"./cordata.png"} tecnologias={["HTML · ", " CSS ·", " Bootstrap ·", " Jquery ·", " Javascript"]} linkProjeto={"https://cordatta-landing-page.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/Cordatta-Landing-Page"} thumbnailCelular={""} />
             </div>
             <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
-              <Projeto titulo='Pomodoro Timer' thumbnail={"https://github.com/wendelisc12/Pomodoro-Timer/raw/main/Screenshot_tela.png"} tecnologias={["HTML · ", " CSS ·", " Javascript",]} linkProjeto={"https://wendelisc12.github.io/Pomodoro-Timer/"} linkCodigo={"https://github.com/wendelisc12/Pomodoro-Timer"} thumbnailCelular={""} />
-            </div>
-            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
-              <Projeto titulo='WebSpeed' thumbnail={"./webs.png"} tecnologias={["HTML · ", " CSS ·", " Javascript ·", " JQuery"]} linkProjeto={"https://web-speed-landing-page.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/WebSpeed-landing-page"} thumbnailCelular={""} />
-            </div>
-            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
-              <Projeto titulo='Cartão virtual' thumbnail={"./cartao.png"} tecnologias={["HTML · ", " Less ·"," Javascript ·", " Gulp",]} linkProjeto={"https://cartaovirtual-hazel.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/cartaovirtual"} thumbnailCelular={""} />
+              <Projeto titulo='Advice Generator' thumbnail={"./advice.png"} tecnologias={["HTML · ", " SASS ·"," Javascript ·", " Jquery ·", " API"]} linkProjeto={"https://advicegenerator-opal.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/Advice-Generator"} thumbnailCelular={""} />
             </div>
           </div>
         </section>
