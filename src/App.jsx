@@ -114,6 +114,9 @@ function App() {
               <Projeto titulo='projeto MaoNaObra' thumbnail={"./maonaobra.png"} tecnologias={["React ·", " Node ·", " Sequelize ·", " Docker"]} linkProjeto={"https://www.linkedin.com/feed/update/urn:li:activity:7095221186854363136/"} linkCodigo={"https://github.com/MaoNaObraa/MaoNaObra"} thumbnailCelular={"./mockup-pomodoro.png"} />
             </div>
             <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
+              <Projeto titulo='Sequência Rápida' thumbnail={"./sequencia.png"} tecnologias={["React ·", " Node ·", " Postgres ·",]} linkProjeto={"https://sequenciarapida.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/sequencia-rapida"} thumbnailCelular={"./mockup-pomodoro.png"} />
+            </div>
+            <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
               <Projeto titulo='Formulário multi-step' thumbnail={"https://github.com/wendelisc12/multi-step-form/raw/main/multi-step-form-main.png"} tecnologias={["React"]} linkProjeto={"https://multi-step-form-seven-lyart.vercel.app/"} linkCodigo={"https://github.com/wendelisc12/multi-step-form"} thumbnailCelular={"./mockup-pomodoro.png"} />
             </div>
             <div className='col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mb-5'>
